@@ -1,3 +1,4 @@
+require('dotenv').config()
 import Header from '@/Components/Header'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
