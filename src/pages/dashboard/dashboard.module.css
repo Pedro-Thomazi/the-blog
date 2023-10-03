@@ -1,0 +1,199 @@
+.containerCreate {
+  max-width: 1124px;
+  width: 100%;
+  margin: 10px auto;
+  background-color: #111;
+  padding: 10px;
+}
+
+.containerCreate h1 {
+  color: #fff;
+  margin: 10px 10px 40px 10px;
+  font-size: 2em;
+}
+
+.formTitle {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.formTitle label {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.formTitle input {
+  height: 40px;
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid #ee3134;
+  background-color: transparent;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  font-size: 1.3em;
+  padding: 10px 60px;
+  margin: 10px;
+  transition: .4s;
+}
+
+.btn:hover {
+  border-radius: 10px;
+}
+
+.btn.btnPublic {
+  background-color: #ee3134;
+  color: #fff;
+}
+
+.btn.btnCancel {
+  border: 1px solid #ee3134;
+  color: #ee3134;
+  background-color: transparent;
+}
+
+
+/* Publicacoes */
+.containerMyPubli {
+  background-color: #aaa;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.containerMyPubli .main {
+  max-width: 1124px;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.containerMyPubli .main h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.publication {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #303030;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.publication p {
+  overflow-x: hidden;
+  text-align: justify;
+  line-height: 150%;
+  color: #000;
+  margin: 10px 0;
+  white-space: pre-wrap;
+}
+
+.impressions,
+.impressions span,
+.headerPubli,
+.configurations,
+.headerPubli .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.headerPubli {
+  justify-content: space-between;
+}
+
+.headerPubli .user img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.headerPubli h4 {
+  margin-left: 10px;
+  color: #777;
+}
+
+.configurations {
+  justify-content: space-between;
+}
+
+.impressions span {
+  margin: 0 10px;
+}
+
+.impressions span svg {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.btnUpdateDelete button,
+.btnUpdateDelete a {
+  margin: 0 10px;
+  font-size: 1.3em;
+  cursor: pointer;
+  border: 0;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+.btnUpdateDelete button.btnDelete {
+  color: #ee3134;
+}
+
+.btnUpdateDelete button.btnDelete:hover {
+  color: #fff;
+  background-color: #ee3134;
+}
+
+.btnUpdateDelete button.btnUpdate {
+  color: #325513;
+}
+
+.btnUpdateDelete button.btnUpdate:hover {
+  color: #fff;
+  background-color: #325513;
+}
+
+.btnUpdateDelete a {
+  color: #111;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+  padding-bottom: 5px;
+}
+
+.btnUpdateDelete a:hover {
+  border-color: #111;
+}
+
+@media (max-width: 535px) {
+  .headerPubli {
+    flex-direction: column;
+  }
+
+  .headerPubli h2 {
+    order: 2;
+  }
+
+  .headerPubli .user {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}

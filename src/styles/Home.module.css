@@ -1,0 +1,39 @@
+.bgImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.541)), url('../assets/bg-image.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 100px);
+}
+
+.introText {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #4242429c;
+  color: #fff;
+  border: 1px solid #ee3134;
+  bottom: 250px;
+}
+
+.introText {
+  text-align: center;
+  padding: 10px;
+  box-shadow: 1px 5px 10px #ee313473;
+}
+
+.introText h2 {
+  margin: 20px 0;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.introText p {
+  margin: 10px 0;
+  font-size: 1.2em;
+  line-height: 150%;
+}

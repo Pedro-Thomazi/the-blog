@@ -1,0 +1,13 @@
+.textarea {
+  width: 100%;
+  resize: vertical;
+  height: 260px;
+  border-radius: 8px;
+  outline: none;
+  padding: 8px 10px;
+  border: 1px solid #ee3134;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.3em;
+  margin: 40px 0;
+}

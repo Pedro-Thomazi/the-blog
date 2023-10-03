@@ -1,0 +1,161 @@
+.headerHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #303030;
+  border-bottom: 1px solid #ccc;
+}
+
+.containerHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1024px;
+  width: 100%;
+  padding: 0px 20px;
+  height: 100px;
+  color: #fff;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title h1 {
+  color: #fff;
+}
+
+.title span {
+  color: #ee3134;
+}
+
+.myBlogs .dashboardButton {
+  padding: 7px 15px;
+  border: 1px solid #ee3134;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #eee;
+  transition: .4s;
+}
+
+.buttonLogin .button {
+  cursor: pointer;
+  background-color: #eee;
+  padding: 10px 40px;
+  font-size: 1em;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: .4s;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.btnList {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  color: #ccc;
+  z-index: 2;
+}
+
+.perfil img {
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.buttonLogin .button:hover {
+  border-color: #ee3134;
+  color: #ee3134;
+  background-color: transparent;
+  transform: scale(1.08);
+}
+
+.listLinks {
+  position: absolute;
+  /* display: none; */
+  flex-direction: column;
+  background-color: #303030;
+  top: 82px;
+  right: 0;
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  transform: translateY(-200%);
+  transition: .4s;
+}
+
+.listLinks li {
+  margin: 20px 10px;
+}
+
+.listLinks .name {
+  background-color: #ee3134;
+  margin: 0;
+  padding: 20px 10px;
+  border: 0;
+}
+
+.listLinks li {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  transition: .4s;
+}
+
+.listLinks li#btnOut {
+  border: 0;
+}
+
+.links {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 1em;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  color: #eee;
+  transition: .4s;
+}
+
+.listLinks li:hover {
+  border-color: #ee3134;
+
+}
+
+.listLinks li#btnOut:hover button,
+.listLinks li:hover a {
+  color: #ee3134;
+}
+
+.listLinks li#btnOut {
+  align-self: center;
+}
+
+.listLinks.show {
+  transform: translateY(0%);
+}
+
+.divBackground {
+  display: none;
+  position: absolute;
+  right: -450px;
+  top: -20px;
+  background-color: #5353535d;
+  width: 100vw;
+  height: 100vh;
+}
+
+.divBackground.showDiv {
+  display: block;
+}

@@ -1,0 +1,176 @@
+.allPublications {
+  width: 100%;
+  max-width: 1024px;
+  margin: 10px auto;
+  padding: 10px 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 2em;
+}
+
+.publication {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #303030;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.impressions,
+.impressions button,
+.headerPubli,
+.headerPubli .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headerPubli {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.headerPubli .user img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.headerPubli h4 {
+  margin-left: 10px;
+  color: #777;
+}
+
+.publication p {
+  overflow-x: hidden;
+  text-align: justify;
+  line-height: 150%;
+  margin: 10px 0;
+  white-space: pre-wrap;
+}
+
+.impressions button {
+  background-color: transparent;
+  border: 0;
+  margin: 0 10px;
+}
+
+.impressions button svg {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.addComment {
+  background-color: #ee3124;
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #fff;
+  transition: .4s;
+  width: 200px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.addComment:hover {
+  background-color: transparent;
+  border: 1px solid #ee3124;
+  color: #ee3124;
+  border-radius: 10px;
+}
+
+.allComments {
+  padding: 10px;
+  margin: 10px;
+}
+
+.allComments h2 {
+  margin-bottom: 20px;
+}
+
+.comment {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.comment p {
+  overflow-x: hidden;
+  margin: 20px 0;
+  white-space: pre-wrap;
+}
+
+
+.comment header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment header span {
+  color: #333;
+  background-color: #aaa;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+.comment header .btnDeleteComment {
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  color: #ee3134;
+  padding: 10px;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+.comment header .btnDeleteComment:hover {
+  background-color: #ee3134;
+  color: #fff;
+}
+
+.allComments .impressions button {
+  margin-left: 0;
+}
+
+
+.notPubli {
+  font-size: 1.5em;
+  margin: 100px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.notPubli a {
+  color: #ee3124;
+}
+
+.notPubli a:hover {
+  border-bottom: 1px solid #ee3124;
+}
+
+
+@media (max-width: 535px) {
+  .headerPubli {
+    flex-direction: column;
+  }
+
+  .headerPubli h2 {
+    order: 2;
+  }
+
+  .headerPubli .user {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .publication .addComment {
+    width: auto;
+  }
+}
